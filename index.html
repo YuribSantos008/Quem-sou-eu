@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,6 +35,16 @@
             color: #ffdd00;
             margin: 8px;
             text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        main > h1 {
+            text-align: center;
+            padding: 15px;
         }
 
         section {
@@ -49,6 +60,7 @@
             width: 180px;
             height: 220px;
             object-fit: cover;
+            max-width: 100%;
         }
 
         section img.villa-pet {
@@ -70,98 +82,115 @@
 
 <body>
 
-    <header>
+<header>
+    <img src="IMG/Yuri.jpg" alt="Meu avatar">
+    <h2>Yuri.dev</h2>
+
+    <nav>
+        <a href="#resumo">Resumo</a>
+        <a href="#formacao">Formação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#referencias">Referências</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Quem sou eu?</h1>
+
+    <section id="resumo">
+        <h2>Resumo</h2>
+
         <img src="IMG/Yuri.jpg" alt="Meu avatar">
-        <h2>Yuri.dev</h2>
 
-        <nav>
-            <a href="#resumo">Resumo</a>
-            <a href="#formacao">Formação</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#referencias">Referências</a>
-        </nav>
-    </header>
+        <p>Olá! Sou Yuri, estudante da Bahia, interessado em tecnologia e criatividade. Gosto de aprender coisas novas e desenvolver projetos que transformem ideias em realidade.</p>
 
-    <main>
-        <h1>Yuri Benício dos Santos</h1>
+        <p>Nos meus momentos livres, gosto de assistir a filmes e séries, jogar, ler livros, acompanhar conteúdos sobre moda e escrever histórias no Wattpad. Também gosto de conhecer novas narrativas e explorar diferentes universos por meio da ficção.</p>
 
-        <section id="resumo">
-            <h2>Resumo</h2>
-            <img src="IMG/Yuri.jpg" alt="Meu avatar">
-            <p>Meu nome é Yuri Benício dos Santos, tenho 18 anos, nasci em Salvador, Bahia, e atualmente moro em Candeias.</p>
-            <p>Gosto de jogar jogos, ler livros, escrever e assistir a filmes e séries. Também gosto de conhecer novas histórias e explorar minha criatividade.</p>
-        </section>
+        <p>Uma frase que representa meu jeito de pensar é: "A criatividade começa quando damos espaço às nossas ideias."</p>
+    </section>
 
-        <section id="formacao">
-            <h2>Formação</h2>
-            <p>Estudo na Escola SESI Manuel Querino e no SENAI Candeias, na cidade de Candeias, Bahia.</p>
-            <p>Durante meus estudos, participo de atividades e projetos que contribuem para meu aprendizado.</p>
-        </section>
+    <section id="formacao">
+        <h2>Formação</h2>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
+        <p>Estudo e participo de atividades que contribuem para meu aprendizado e desenvolvimento pessoal.</p>
 
-            <h3>TRIAGGO</h3>
-            <img src="IMG/Triaggo.jpg" alt="Projeto TRIAGGO">
-            <p>Projeto desenvolvido para a Mostra STEAM. A proposta é facilitar o agendamento de serviços de saúde para usuários do SUS em Candeias.</p>
+        <p>Tenho interesse na área de tecnologia e no desenvolvimento de sites utilizando HTML e CSS.</p>
+    </section>
 
-            <h3>Villa Pet</h3>
-            <img class="villa-pet" src="IMG/Villa Pet.jpg" alt="Projeto Villa Pet">
-            <p>Projeto de um site para um pet shop fictício, com informações sobre os serviços oferecidos e os cuidados com os animais.</p>
-        </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
 
-        <section id="hobbies">
-            <h2>Hobbies</h2>
+        <h3>TRIAGGO</h3>
+        <img src="IMG/Triaggo.jpg" alt="Projeto TRIAGGO">
 
-            <h3>Filmes</h3>
-            <p>Assistir a filmes de diferentes gêneros.</p>
+        <p>Projeto desenvolvido para a Mostra STEAM. A proposta é facilitar o agendamento de serviços de saúde para usuários do SUS em Candeias, Bahia.</p>
 
-            <h3>Jogos</h3>
-            <p>Jogar e conhecer jogos diferentes.</p>
+        <h3>Villa Pet</h3>
+        <img class="villa-pet" src="IMG/Villa Pet.jpg" alt="Projeto Villa Pet">
 
-            <h3>Moda</h3>
-            <p>Conhecer estilos e acompanhar tendências da moda.</p>
+        <p>Projeto de um site para um pet shop fictício, com informações sobre os serviços oferecidos e os cuidados com os animais.</p>
+    </section>
 
-            <h3>Séries</h3>
-            <p>Acompanhar séries e suas histórias.</p>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
 
-            <h3>Escrita</h3>
-            <p>Criar histórias e escrever no Wattpad.</p>
-        </section>
+        <h3>Filmes</h3>
+        <p>Gosto de assistir a filmes de diferentes gêneros e conhecer histórias interessantes.</p>
 
-        <section id="referencias">
-            <h2>Referências</h2>
+        <h3>Jogos</h3>
+        <p>Gosto de jogar e conhecer jogos diferentes, especialmente os disponíveis no Roblox.</p>
 
-            <h3>Filme: Pânico 4</h3>
-            <img src="IMG/Pânico 4.jpg" alt="Pôster de Pânico 4">
-            <p>O filme acompanha Sidney Prescott, que retorna a Woodsboro e acaba envolvida em uma nova série de ataques do assassino Ghostface.</p>
+        <h3>Moda</h3>
+        <p>Tenho interesse em conhecer estilos, combinações e tendências da moda.</p>
 
-            <h3>Filme: O Diabo Veste Prada</h3>
-            <img src="IMG/O Diabo Veste Prada.jpg" alt="Pôster de O Diabo Veste Prada">
-            <p>Andy Sachs consegue um emprego como assistente de Miranda Priestly, uma poderosa editora de uma revista de moda, e enfrenta os desafios desse novo ambiente de trabalho.</p>
+        <h3>Séries</h3>
+        <p>Gosto de acompanhar séries e descobrir as histórias e os personagens de cada uma.</p>
 
-            <h3>Música: Hate That I Made You Love Me</h3>
-            <img src="IMG/Hate That I Made You Love Me.jpg" alt="Imagem da música Hate That I Made You Love Me">
-            <p>Artista: Ariana Grande. Ela é minha cantora favorita, e suas músicas fazem parte das minhas referências musicais.</p>
+        <h3>Escrita</h3>
+        <p>Gosto de criar histórias e escrever no Wattpad, explorando minha criatividade.</p>
+    </section>
 
-            <h3>Música: We Can't Be Friends</h3>
-            <img src="IMG/We Can't Be Friends.jpg" alt="Imagem da música We Can't Be Friends">
-            <p>Artista: Ariana Grande. Ela é minha cantora favorita, e essa música é uma das que escolhi para representar meu gosto musical.</p>
+    <section id="referencias">
+        <h2>Referências</h2>
 
-            <h3>Livro: Diários do Vampiro</h3>
-            <img src="IMG/The Vampire Diaries.jpg" alt="Capa de Diários do Vampiro">
-            <p>Escrito por L. J. Smith, acompanha Elena Gilbert e os irmãos vampiros Stefan e Damon Salvatore em uma história de mistério, conflitos e relacionamentos sobrenaturais.</p>
+        <h3>Filme: Pânico 4</h3>
+        <img src="IMG/Pânico 4.jpg" alt="Pôster de Pânico 4">
 
-            <h3>Livro: Um Perfeito Cavalheiro</h3>
-            <img src="IMG/Um Perfeito Cavalheiro.jpg" alt="Capa de Um Perfeito Cavalheiro">
-            <p>Escrito por Julia Quinn, o livro acompanha Benedict Bridgerton e Sophie Beckett, que se conhecem durante um baile e enfrentam diferenças sociais para viver sua história de amor.</p>
-        </section>
-    </main>
+        <p>O filme acompanha Sidney Prescott, que retorna a Woodsboro e acaba envolvida em uma nova série de ataques do assassino Ghostface.</p>
 
-    <footer>
-        <p>Yuri Benício dos Santos</p>
-    </footer>
+        <h3>Filme: O Diabo Veste Prada</h3>
+        <img src="IMG/O Diabo Veste Prada.jpg" alt="Pôster de O Diabo Veste Prada">
+
+        <p>Andy Sachs consegue um emprego como assistente de Miranda Priestly, uma poderosa editora de uma revista de moda, e enfrenta os desafios desse novo ambiente de trabalho.</p>
+
+        <h3>Música: Hate That I Made You Love Me</h3>
+        <img src="IMG/Hate That I Made You Love Me.jpg" alt="Imagem da música Hate That I Made You Love Me">
+
+        <p>Artista: Ariana Grande. Ela é minha cantora favorita, e suas músicas fazem parte das minhas referências musicais.</p>
+
+        <h3>Música: We Can't Be Friends</h3>
+        <img src="IMG/We Can't Be Friends.jpg" alt="Imagem da música We Can't Be Friends">
+
+        <p>Artista: Ariana Grande. Essa música é uma das que escolhi para representar meu gosto musical.</p>
+
+        <h3>Livro: Diários do Vampiro</h3>
+        <img src="IMG/The Vampire Diaries.jpg" alt="Capa de Diários do Vampiro">
+
+        <p>Escrito por L. J. Smith, acompanha Elena Gilbert e os irmãos vampiros Stefan e Damon Salvatore em uma história de mistério e conflitos sobrenaturais.</p>
+
+        <h3>Livro: Um Perfeito Cavalheiro</h3>
+        <img src="IMG/Um Perfeito Cavalheiro.jpg" alt="Capa de Um Perfeito Cavalheiro">
+
+        <p>Escrito por Julia Quinn, o livro acompanha Benedict Bridgerton e Sophie Beckett, que se conhecem durante um baile e enfrentam diferenças sociais para viver sua história de amor.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Yuri.dev</p>
+</footer>
 
 </body>
 </html>
